@@ -1,0 +1,252 @@
+.dropdown {
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: 2px solid rgb(20, 148, 244);
+  box-shadow: 0px 1px 1px 0px rgb(237, 241, 250);
+  height: 68px;
+  width: 266px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #3faffa;
+}
+
+.dropdown-down {
+  border: 0.5px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 16px 24px 2px rgb(0 0 0 / 10%);
+  transition: all 0.4s ease-in-out;
+  color: #1a3c81;
+  position: absolute;
+  z-index: 100;
+  width: 266px;
+  display: flex;
+  flex-direction: column;
+  height: 482px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: flex-start;
+  margin-left: 16px;
+  width: 150px;
+}
+
+.link-icon {
+  margin-left: 8px;
+  color: #a1afcc;
+}
+
+.drop-drown-icon {
+  color: #062b75;
+  margin-left: 12%;
+}
+
+.drop-drown-up-icon {
+  color: #062b75;
+  margin-left: 12%;
+  margin-top: 14px;
+}
+
+.sites-text {
+  color: #a1afcc;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.all-sites-text {
+  color: #1a3c81;
+  font-weight: 600;
+  width: 165px;
+  text-align: left;
+}
+
+.drop-down-search-container {
+  width: 94%;
+  margin: 14px auto;
+}
+
+.input-search-icon {
+  color: #a1afcc;
+  position: absolute;
+  font-size: 18px;
+  margin: 12px 0 0 8px;
+}
+
+.drop-down-search-container input::placeholder {
+  color: #a2b0ca;
+}
+
+.drop-down-search-container input {
+  width: 86%;
+  border: none;
+  box-shadow: 0px 0px 0px 1px rgb(0 0 0 / 5%);
+  border-radius: 4px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fafbfc;
+  padding-left: 33px;
+  font-family: sans-serif;
+  color: #a2b0ca;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.drop-down-select {
+  width: 85%;
+  margin: 4px auto 4px auto;
+  font-family: sans-serif;
+  color: #a2b0ca;
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 33px;
+}
+
+.plus-icon,
+.close-icon {
+  position: absolute;
+  color: #a2b0ca;
+  font-size: 20px;
+  left: 10px;
+}
+
+.select-all-cont {
+  margin-bottom: 10px;
+}
+
+.select-none-label,
+.select-all-label {
+  padding-top: 2px;
+}
+
+.select-none-cont {
+  margin-top: 18px;
+}
+
+.site-list-container {
+  width: 90%;
+  margin: 0px auto 14px 6px;
+  font-family: sans-serif;
+  color: #375590;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.site-list-content {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px;
+}
+
+.site-list-label {
+  width: 100%;
+  align-self: center;
+  margin-left: 8px;
+}
+
+.checkbox-input {
+  width: 26px;
+  height: 26px;
+  border: none;
+  box-shadow: 0px 0px 0px 1px rgb(0 0 0 / 5%);
+  outline: 1px solid #eff2f6;
+}
+
+.button-container {
+  width: 266px;
+  height: 92px;
+  position: absolute;
+  top: 595px;
+  border: 0.5px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 16px 24px 2px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+}
+
+.filter-button {
+  margin: auto;
+  height: 56px;
+  width: 242px;
+  margin-top: 24px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  color: #c3cddf;
+}
+
+dropdown-down::-webkit-scrollbar,
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgb(20, 148, 244);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgb(20, 148, 244);
+}
+
+.button-back-color-not-selected {
+  background-color: #f3f4f8;
+}
+
+.button-back-color-selected {
+  background-color: #204284;
+}
+
+.select-all-cont:hover,
+.select-none-cont:hover {
+  color: #204284;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 4px;
+  margin-left: 30px;
+}
+
+.drop-down-result-container {
+  width: 96%;
+  margin: 6px auto;
+  border: 0.5px solid lightgray;
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selected-output-text {
+  font-size: 12px;
+  padding: 3px 5px;
+  border: 0.5px solid lightgray;
+  margin: 3px 2px;
+  border-radius: 3px;
+}
+
+.hide {
+  height: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 8px 12px;
+}
+
+li:hover {
+  background-color: rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+}
